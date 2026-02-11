@@ -2112,7 +2112,7 @@
     function startSyncTimer(){
       stopSyncTimer();
       const on = (remoteAutoOn?.value || "on") === "on";
-      const url = (remoteGetUrl?.value || "").trim();
+      const url = (remoteGetUrl?.value || "https://iridescent-starlight-4666e0.netlify.app/data/compounds_data.json").trim();
       if(!on || !url){
         setSyncBadge("غير متصل", false);
         return;
