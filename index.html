@@ -2057,7 +2057,7 @@
     }
 
     async function fetchRemoteOnce(silent=false){
-      const url = (remoteGetUrl?.value || "").trim();
+      const url = (remoteGetUrl?.value || "https://iridescent-starlight-4666e0.netlify.app/data/compounds_data.json").trim();
       if(!url){
         if(!silent) alert("ضع رابط JSON (GET) في الإعدادات أولًا.");
         setSyncBadge("غير متصل", false);
